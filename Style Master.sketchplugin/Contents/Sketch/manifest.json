@@ -1,0 +1,40 @@
+{
+  "name": "Style Master",
+  "version": "1.0.0",
+  "identifier": "com.aparajita.style-master",
+  "description": "Shared style renaming.",
+  "author": "Aparajita Fishman",
+  "authorEmail": "aparajita@aparajita.com",
+  "homepage": "https://github.com/aparajita/sketch-style-master",
+  "compatibleVersion": 4,
+  "bundleVersion": 1,
+  "disableCocoaScriptPreprocessor": true,
+  "appcast": "https://raw.githubusercontent.com/aparajita/sketch-style-master/master/appcast.xml",
+  "nibProject": "nib",
+  "nibBundle": "UIBundle",
+  "commands": [
+    {
+      "name": "Rename Text Styles",
+      "script": "plugin.js",
+      "handler": "renameTextStyles",
+      "identifier": "rename-text-styles",
+      "description": "Rename shared text styles",
+      "icon": "rename-styles.png"
+    },
+    {
+      "name": "Rename Layer Styles",
+      "script": "plugin.js",
+      "handler": "renameLayerStyles",
+      "identifier": "rename-layer-styles",
+      "description": "Rename shared layer styles",
+      "icon": "rename-styles.png"
+    }
+  ],
+  "menu": {
+    "title": "Style Master",
+    "items": [
+      "rename-text-styles",
+      "rename-layer-styles"
+    ]
+  }
+}

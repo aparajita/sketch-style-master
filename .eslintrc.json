@@ -1,0 +1,55 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "sourceType": "module",
+    "ecmaFeatures": {
+    }
+  },
+
+  "env": {
+    "es6": true,
+    "node": true
+  },
+
+  "extends": "eslint:recommended",
+
+  "globals": {
+    "NSObject": true,
+    "NSControl": true,
+    "NSTextField": true,
+    "NSMakeSize": true,
+    "NSFont": true,
+    "NSAlert": true,
+    "NSImage": true,
+    "NSApp": true,
+    "NSMakePoint": true,
+    "NSColor": true,
+    "NSBezelBorder": true,
+    "NSScrollView": true,
+    "NSScroller": true,
+    "NSRegularControlSize": true,
+    "NSScrollerStyleOverlay": true,
+    "NSCell": true,
+    "NSMatrix": true,
+    "NSMakeRect": true,
+    "NSListModeMatrix": true,
+    "CGSizeMake": true,
+    "NSString": true,
+    "NSUUID": true,
+    "NSBundle": true,
+    "NSClassFromString": true,
+    "MOClassDescription": true,
+    "MOProtocolDescription": true,
+    "NSSelectorFromString": true,
+    "MOPointer": true,
+    "NSDictionary": true,
+    "NSWindow": true,
+    "NSUTF8StringEncoding": true,
+    "log": true
+  },
+
+  "rules": {
+    "no-console": 0,
+    "require-await": "error"
+  }
+}

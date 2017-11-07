@@ -1,0 +1,20 @@
+# npm
+node_modules/
+.npm/
+npm-debug.log
+
+# mac
+.DS_Store
+
+# Editors
+.idea/
+.vscode/
+
+# Xcode
+*.xcworkspace
+
+# Misc
+*.gifcask
+*.mov
+test.js
+*.zip

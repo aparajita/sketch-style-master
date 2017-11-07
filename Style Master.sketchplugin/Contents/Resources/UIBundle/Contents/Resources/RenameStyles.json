@@ -1,0 +1,17 @@
+{
+  "outlets": [
+    "scrollView",
+    "window",
+    "afterLabel",
+    "beforeLabel"
+  ],
+  "actions": [
+    "toggleAutoscroll:",
+    "handleRename:",
+    "toggleFindOption:",
+    "handleCancel:",
+    "toggleFindOption:",
+    "toggleShowOnlyMatchingStyles:",
+    "handleApply:"
+  ]
+}
