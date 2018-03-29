@@ -1,3 +1,5 @@
+**NOTE:** This project is no longer being maintained. If you are interested in takng over as maintainer, please contact me. Otherwise, feel free to fork!
+
 # Style Master
 Let’s face it — Sketch’s style organizer leaves a lot to be desired. When you want to apply whole scale changes to your shared style names, you’re faced with endless clicking and manual renaming.
 
