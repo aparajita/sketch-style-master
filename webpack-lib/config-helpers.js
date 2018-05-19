@@ -61,20 +61,6 @@ function makeConfig(pluginConfig, options) {
               }
             }
           ]
-        },
-        {
-          test: /\bmanifest\.json$/,
-          include: /\bsrc\b/,
-          exclude: /\bnib\b/,
-          use: [
-            {
-              loader: 'file-loader',
-              options: {
-                name: '[name].json',
-                publicPath: forceRecompile
-              }
-            }
-          ]
         }
       ]
     },

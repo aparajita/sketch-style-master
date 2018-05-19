@@ -12,6 +12,8 @@ import { NibUI } from './sketch-nibui'
 import '../nib/RenameStyles.xib'
 import '../nib/RenameStyles.m'
 
+import { version } from '../manifest.json'
+
 const PREVIEW_COLUMN_COUNT = 2
 const PREVIEW_CELL_SPACING = NSMakeSize(16, 2)
 const PREVIEW_VISIBLE_ROWS = 27
@@ -63,6 +65,7 @@ export class SharedStyleRenamer {
   loadNib() {
     this.nib = new NibUI(this.context, 'UIBundle', 'RenameStyles', this, this.ivars)
     this.nib.outlets.window.setTitle(this.dialogTitle)
+    this.nib.outlets.versionLabel.setStringValue(`v${version}`)
   }
 
   windowWillClose() {
@@ -294,7 +297,6 @@ export class SharedStyleRenamer {
         const copy = info.style.copy()
         copy.setName(info.newName)
         info.style.syncPropertiesFromObject(copy)
-        this.styles.updateValueOfSharedObject_byCopyingInstance(info.style, copy.style())
       }
     }
 

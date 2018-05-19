@@ -7,6 +7,7 @@
 @property IBOutlet NSScrollView *scrollView;
 @property IBOutlet NSTextField *beforeLabel;
 @property IBOutlet NSTextField *afterLabel;
+@property IBOutlet NSTextField *versionLabel;
 // End of view bindings
 
 // Control action handlers go here

@@ -3,7 +3,8 @@
     "scrollView",
     "window",
     "afterLabel",
-    "beforeLabel"
+    "beforeLabel",
+    "versionLabel"
   ],
   "actions": [
     "toggleAutoscroll:",
