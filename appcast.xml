@@ -4,5 +4,17 @@
     <item>
       <enclosure url="https://github.com/aparajita/sketch-style-master/releases/download/v1.0.0/Style Master.sketchplugin.zip" sparkle:version="1.0.0"/>
     </item>
+    <item>
+      <title>Version 1.0.1</title>
+      <description>
+        <![CDATA[
+          <ul>
+            <li>Support for Sketch 50+</li>
+          </ul>
+        ]]>
+      </description>
+      <enclosure url="https://github.com/aparajita/sketch-style-master/releases/download/v1.0.1/Style Master.sketchplugin.zip" sparkle:version="1.0.1" type="application/octet-stream" />
+    </item>
+
   </channel>
 </rss>
