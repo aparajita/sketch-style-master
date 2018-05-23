@@ -2,10 +2,10 @@
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
   <channel>
     <item>
-      <enclosure url="https://github.com/aparajita/sketch-style-master/releases/download/v1.0.1/Style Master.sketchplugin.zip" sparkle:version="1.0.1"/>
+      <enclosure url="https://github.com/aparajita/sketch-style-master/releases/download/v1.0.1/Style.Master.sketchplugin.zip" sparkle:version="1.0.1"/>
     </item>
     <item>
-      <enclosure url="https://github.com/aparajita/sketch-style-master/releases/download/v1.0.0/Style Master.sketchplugin.zip" sparkle:version="1.0.0"/>
+      <enclosure url="https://github.com/aparajita/sketch-style-master/releases/download/v1.0.0/Style.Master.sketchplugin.zip" sparkle:version="1.0.0"/>
     </item>
   </channel>
 </rss>
