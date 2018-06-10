@@ -1,6 +1,6 @@
 {
   "name": "Style Master",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "identifier": "com.aparajita.style-master",
   "description": "Shared style renaming.",
   "author": "Aparajita Fishman",
@@ -8,6 +8,7 @@
   "homepage": "https://github.com/aparajita/sketch-style-master",
   "compatibleVersion": 4,
   "bundleVersion": 1,
+  "icon": "icon.png",
   "disableCocoaScriptPreprocessor": true,
   "appcast": "https://raw.githubusercontent.com/aparajita/sketch-style-master/master/appcast.xml",
   "nibProject": "nib",
