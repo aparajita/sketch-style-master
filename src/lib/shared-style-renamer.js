@@ -327,12 +327,16 @@ export class SharedStyleRenamer {
       let cell = cells[index]
       cell.setFont(info.newName.length === 0 ? this.cellFontRegular : this.cellFontBold)
       cell.setStringValue(info.oldName)
+      this.matrix.drawCellAtRow_column(row, 0)
+
       let size = cell.cellSize()
       maxWidth = Math.max(maxWidth, size.width)
 
       cell = cells[index + 1]
       cell.setFont(this.cellFontRegular)
       cell.setStringValue(info.newName)
+      this.matrix.drawCellAtRow_column(row, 1)
+
       size = cell.cellSize()
       maxWidth = Math.max(maxWidth, size.width)
     }

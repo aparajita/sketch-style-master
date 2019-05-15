@@ -73,7 +73,7 @@ var exports =
 /* 0 */
 /***/ (function(module, exports) {
 
-module.exports = {"name":"Style Master","version":"1.0.2","identifier":"com.aparajita.style-master","description":"Shared style renaming.","author":"Aparajita Fishman","authorEmail":"aparajita@aparajita.com","homepage":"https://github.com/aparajita/sketch-style-master","compatibleVersion":4,"bundleVersion":1,"icon":"icon.png","disableCocoaScriptPreprocessor":true,"appcast":"https://raw.githubusercontent.com/aparajita/sketch-style-master/master/appcast.xml","nibProject":"nib","nibBundle":"UIBundle","commands":[{"name":"Rename Text Styles","script":"plugin.js","handler":"renameTextStyles","identifier":"rename-text-styles","description":"Rename shared text styles","icon":"rename-styles.png"},{"name":"Rename Layer Styles","script":"plugin.js","handler":"renameLayerStyles","identifier":"rename-layer-styles","description":"Rename shared layer styles","icon":"rename-styles.png"}],"menu":{"title":"Style Master","items":["rename-text-styles","rename-layer-styles"]}}
+module.exports = {"name":"Style Master","version":"1.0.3","identifier":"com.aparajita.style-master","description":"Shared style renaming.","author":"Aparajita Fishman","authorEmail":"aparajita@aparajita.com","homepage":"https://github.com/aparajita/sketch-style-master","compatibleVersion":4,"bundleVersion":1,"icon":"icon.png","disableCocoaScriptPreprocessor":true,"appcast":"https://raw.githubusercontent.com/aparajita/sketch-style-master/master/appcast.xml","nibProject":"nib","nibBundle":"UIBundle","commands":[{"name":"Rename Text Styles","script":"plugin.js","handler":"renameTextStyles","identifier":"rename-text-styles","description":"Rename shared text styles","icon":"rename-styles.png"},{"name":"Rename Layer Styles","script":"plugin.js","handler":"renameLayerStyles","identifier":"rename-layer-styles","description":"Rename shared layer styles","icon":"rename-styles.png"}],"menu":{"title":"Style Master","items":["rename-text-styles","rename-layer-styles"]}}
 
 /***/ }),
 /* 1 */
@@ -538,12 +538,16 @@ var SharedStyleRenamer = exports.SharedStyleRenamer = function () {
         var cell = cells[index];
         cell.setFont(info.newName.length === 0 ? this.cellFontRegular : this.cellFontBold);
         cell.setStringValue(info.oldName);
+        this.matrix.drawCellAtRow_column(row, 0);
+
         var size = cell.cellSize();
         maxWidth = Math.max(maxWidth, size.width);
 
         cell = cells[index + 1];
         cell.setFont(this.cellFontRegular);
         cell.setStringValue(info.newName);
+        this.matrix.drawCellAtRow_column(row, 1);
+
         size = cell.cellSize();
         maxWidth = Math.max(maxWidth, size.width);
       }
@@ -1256,13 +1260,13 @@ exports.default = MochaJSDelegate;
 /* 7 */
 /***/ (function(module, exports) {
 
-module.exports = "28e7ed50-6cec-11e8-a997-5d009ad12219";
+module.exports = "c791f070-76b1-11e9-ab57-01cb91e33a3e";
 
 /***/ }),
 /* 8 */
 /***/ (function(module, exports) {
 
-module.exports = "28cd8780-6cec-11e8-a997-5d009ad12219";
+module.exports = "c7988020-76b1-11e9-ab57-01cb91e33a3e";
 
 /***/ })
 /******/ ]);
