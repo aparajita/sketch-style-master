@@ -7,6 +7,7 @@
 // Code being used
 import { regExpEscape } from './utils'
 import { NibUI } from './sketch-nibui'
+import sketch from 'sketch'
 
 // webpack build dependencies
 import '../nib/RenameStyles.xib'
@@ -28,7 +29,7 @@ function capitalize(text) {
 export class SharedStyleRenamer {
   constructor(context, styles, layerType) {
     this.context = context
-    this.sketch = context.api()
+    this.sketch = sketch
     this.styles = styles
     this.styleInfo = []
     this.renamedStyles = []
@@ -56,7 +57,7 @@ export class SharedStyleRenamer {
     const alert = NSAlert.new()
     alert.setMessageText(this.dialogTitle)
 
-    const icon = NSImage.alloc().initByReferencingFile(this.sketch.resourceNamed('rename-styles@2x.png').path())
+    const icon = NSImage.alloc().initByReferencingFile(this.context.plugin.urlForResourceNamed('rename-styles@2x.png').path())
     alert.setIcon(icon)
 
     return alert
