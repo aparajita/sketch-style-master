@@ -203,7 +203,7 @@ export class NibUI {
         // Step 2: add a getter/setter to the ivar proxy object
         Object.defineProperty(this.ivars, name, {
           get: () => this.getIvar(name),
-          set: value => this.setIvar(name, value)
+          set: value => { this.setIvar(name, value) }
         })
       }
       else {
