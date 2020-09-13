@@ -1,10 +1,9 @@
 'use strict'
 
 const CopyWebpackPlugin = require('copy-webpack-plugin')
-const NpmInstallPlugin = require('npm-install-webpack-plugin')
 const path = require('path')
 const PrependAppendPlugin = require('./plugins/webpack-export-sketch-commands-plugin')
-const uuid = require('uuid/v1')
+const { v4: uuid } = require('uuid')
 
 const manifest = require('../src/manifest.json')
 
@@ -40,12 +39,18 @@ function makeConfig(pluginConfig, options) {
 
     entry: pluginConfig.entry,
 
+    mode: 'development',
+
     output: {
       filename: 'plugin.js',
       path: path.resolve(projectDir, pluginConfig.target, 'Contents/Sketch')
     },
 
     target: 'node',
+
+    externals: {
+      sketch: 'commonjs sketch'
+    },
 
     module: {
       rules: [
@@ -57,7 +62,7 @@ function makeConfig(pluginConfig, options) {
             {
               loader: 'babel-loader',
               query: {
-                presets: ['env']
+                presets: ['@babel/preset-env']
               }
             }
           ]
@@ -73,7 +78,8 @@ function makeConfig(pluginConfig, options) {
     },
 
     plugins: [
-      new CopyWebpackPlugin([
+      new CopyWebpackPlugin({
+        patterns: [
           {
             from: path.resolve(projectDir, 'resources'),
             to: path.resolve(projectDir, pluginConfig.resources)
@@ -82,9 +88,8 @@ function makeConfig(pluginConfig, options) {
             from: path.resolve(projectDir, 'src/manifest.json')
           }
         ]
-      ),
-      new PrependAppendPlugin(manifest),
-      new NpmInstallPlugin()
+      }),
+      new PrependAppendPlugin(manifest)
     ]
   }
 

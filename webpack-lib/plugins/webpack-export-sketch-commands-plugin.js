@@ -1,6 +1,6 @@
-'use strict';
+'use strict'
 
-const { ConcatSource } = require('webpack-sources');
+const { ConcatSource } = require('webpack-sources')
 
 const prefix = `
 var that = this;
@@ -32,21 +32,17 @@ class ExportSketchCommandsPlugin {
   }
 
   apply(compiler) {
-    compiler.plugin('compilation', compilation => {
-      compilation.plugin('optimize-chunk-assets', (chunks, callback) => {
+    compiler.hooks.compilation.tap('ExportSketchCommandsPlugin', compilation => {
+      compilation.hooks.optimizeChunkAssets.tapAsync('ExportSketchCommandsPlugin', (chunks, callback) => {
         chunks.forEach(chunk => {
-          if (!chunk.isInitial()) {
-            return
-          }
-
           chunk.files.forEach(file => {
             compilation.assets[file] = new ConcatSource(prefix, compilation.assets[file], this.suffix)
           })
-        }) // chunks.forEach
+        })
 
         callback()
-      }) // compilation.plugin('optimize-chunk-assets')
-    }) // compiler.plugin('compilation')
+      })
+    })
   }
 }
 
