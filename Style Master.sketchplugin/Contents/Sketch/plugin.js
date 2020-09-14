@@ -171,7 +171,7 @@ eval("module.exports = JSON.parse(\"{\\\"name\\\":\\\"Style Master\\\",\\\"versi
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"3be6a9bb-7406-497f-aa22-d12eae6bf8ab\");\n\n//# sourceURL=webpack:///./src/nib/RenameStyles.m?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"2cb073ee-490f-4e40-b84f-392bd86b810d\");\n\n//# sourceURL=webpack:///./src/nib/RenameStyles.m?");
 
 /***/ }),
 
@@ -183,7 +183,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"f7e36d94-02f2-42a3-9eac-0df320f978a6\");\n\n//# sourceURL=webpack:///./src/nib/RenameStyles.xib?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"08064091-35f5-4856-9804-167f1b9e13a4\");\n\n//# sourceURL=webpack:///./src/nib/RenameStyles.xib?");
 
 /***/ }),
 
