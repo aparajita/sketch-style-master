@@ -23,7 +23,7 @@
     "disable-hotloading": "node scripts/enable-sketch-plugin-hotloading.js false",
     "preversion": "npm test && git add -A .",
     "postversion": "node scripts/postversion.js",
-    "publish": "scripts/publish.sh"
+    "push": "scripts/publish.sh"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
