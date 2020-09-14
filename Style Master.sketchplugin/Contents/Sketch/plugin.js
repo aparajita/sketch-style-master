@@ -159,7 +159,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /*! exports provided: name, version, identifier, description, author, authorEmail, homepage, compatibleVersion, bundleVersion, icon, disableCocoaScriptPreprocessor, scope, appcast, nibProject, nibBundle, commands, menu, default */
 /***/ (function(module) {
 
-eval("module.exports = JSON.parse(\"{\\\"name\\\":\\\"Style Master\\\",\\\"version\\\":\\\"1.0.4\\\",\\\"identifier\\\":\\\"com.aparajita.style-master\\\",\\\"description\\\":\\\"Shared style renaming.\\\",\\\"author\\\":\\\"Aparajita Fishman\\\",\\\"authorEmail\\\":\\\"aparajita@aparajita.com\\\",\\\"homepage\\\":\\\"https://github.com/aparajita/sketch-style-master\\\",\\\"compatibleVersion\\\":\\\"66.0\\\",\\\"bundleVersion\\\":1,\\\"icon\\\":\\\"icon.png\\\",\\\"disableCocoaScriptPreprocessor\\\":true,\\\"scope\\\":\\\"document\\\",\\\"appcast\\\":\\\"https://raw.githubusercontent.com/aparajita/sketch-style-master/master/appcast.xml\\\",\\\"nibProject\\\":\\\"nib\\\",\\\"nibBundle\\\":\\\"UIBundle\\\",\\\"commands\\\":[{\\\"name\\\":\\\"Rename Text Styles\\\",\\\"script\\\":\\\"plugin.js\\\",\\\"handler\\\":\\\"renameTextStyles\\\",\\\"identifier\\\":\\\"rename-text-styles\\\",\\\"description\\\":\\\"Rename shared text styles\\\",\\\"icon\\\":\\\"rename-styles.png\\\"},{\\\"name\\\":\\\"Rename Layer Styles\\\",\\\"script\\\":\\\"plugin.js\\\",\\\"handler\\\":\\\"renameLayerStyles\\\",\\\"identifier\\\":\\\"rename-layer-styles\\\",\\\"description\\\":\\\"Rename shared layer styles\\\",\\\"icon\\\":\\\"rename-styles.png\\\"}],\\\"menu\\\":{\\\"title\\\":\\\"Style Master\\\",\\\"items\\\":[\\\"rename-text-styles\\\",\\\"rename-layer-styles\\\"]}}\");\n\n//# sourceURL=webpack:///./src/manifest.json?");
+eval("module.exports = JSON.parse(\"{\\\"name\\\":\\\"Style Master\\\",\\\"version\\\":\\\"1.0.5\\\",\\\"identifier\\\":\\\"com.aparajita.style-master\\\",\\\"description\\\":\\\"Shared style renaming.\\\",\\\"author\\\":\\\"Aparajita Fishman\\\",\\\"authorEmail\\\":\\\"aparajita@aparajita.com\\\",\\\"homepage\\\":\\\"https://github.com/aparajita/sketch-style-master\\\",\\\"compatibleVersion\\\":\\\"66.0\\\",\\\"bundleVersion\\\":1,\\\"icon\\\":\\\"icon.png\\\",\\\"disableCocoaScriptPreprocessor\\\":true,\\\"scope\\\":\\\"document\\\",\\\"appcast\\\":\\\"https://raw.githubusercontent.com/aparajita/sketch-style-master/master/appcast.xml\\\",\\\"nibProject\\\":\\\"nib\\\",\\\"nibBundle\\\":\\\"UIBundle\\\",\\\"commands\\\":[{\\\"name\\\":\\\"Rename Text Styles\\\",\\\"script\\\":\\\"plugin.js\\\",\\\"handler\\\":\\\"renameTextStyles\\\",\\\"identifier\\\":\\\"rename-text-styles\\\",\\\"description\\\":\\\"Rename shared text styles\\\",\\\"icon\\\":\\\"rename-styles.png\\\"},{\\\"name\\\":\\\"Rename Layer Styles\\\",\\\"script\\\":\\\"plugin.js\\\",\\\"handler\\\":\\\"renameLayerStyles\\\",\\\"identifier\\\":\\\"rename-layer-styles\\\",\\\"description\\\":\\\"Rename shared layer styles\\\",\\\"icon\\\":\\\"rename-styles.png\\\"}],\\\"menu\\\":{\\\"title\\\":\\\"Style Master\\\",\\\"items\\\":[\\\"rename-text-styles\\\",\\\"rename-layer-styles\\\"]}}\");\n\n//# sourceURL=webpack:///./src/manifest.json?");
 
 /***/ }),
 
@@ -171,7 +171,7 @@ eval("module.exports = JSON.parse(\"{\\\"name\\\":\\\"Style Master\\\",\\\"versi
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"2cb073ee-490f-4e40-b84f-392bd86b810d\");\n\n//# sourceURL=webpack:///./src/nib/RenameStyles.m?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"c096dbf6-983f-45a8-8ac2-ae8b62268705\");\n\n//# sourceURL=webpack:///./src/nib/RenameStyles.m?");
 
 /***/ }),
 
@@ -183,7 +183,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"08064091-35f5-4856-9804-167f1b9e13a4\");\n\n//# sourceURL=webpack:///./src/nib/RenameStyles.xib?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"f94b6f3e-0712-4f74-8f9a-cf7f25013ce7\");\n\n//# sourceURL=webpack:///./src/nib/RenameStyles.xib?");
 
 /***/ }),
 
